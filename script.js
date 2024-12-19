@@ -31,13 +31,18 @@ const fetchPokemons = async () => {
   // Afficher les Pokémon
   pokemonData.forEach((pokemon) => {
     pokemonContainer.innerHTML += `
-      <div class="pokemon-card"> 
-        <img class="pokemon-image" src="${pokemon.sprite}" alt="${pokemon.name}">
-        <div class="pokemon-info">
-          <h5 class="pokemon-name">${pokemon.name}</h5>
-          <p class="pokemon-number">№ ${pokemon.id}</p>
-        </div>
-      </div>`;
+      <div class="pokemon-card">
+  <div class="pokemon-card-inner">
+    <div class="pokemon-card-front">
+      <img src="${pokemon.sprite}" alt="${pokemon.name}" style="width:200px;height:200px;">
+      <h5 class="pokemon-name">${pokemon.name}</h5> 
+      <p class="pokemon-number">№ ${pokemon.id}</p>
+    </div>
+    <div class="pokemon-card-back">
+    <h5 class="pokemon-name">${pokemon.name}</h5> 
+    </div>
+  </div>
+</div>`;
   });
 }; // Fin de la fonction fetchPokemons
 
@@ -57,7 +62,7 @@ pokemonRecherchee.addEventListener('input', (event) => {
        const pkmnNbr = card.querySelector('.pokemon-number').textContent.toLowerCase();
        
        if (pkmnNom.includes(recherche) || pkmnNbr.includes(recherche)) {
-           card.style.display = "block";
+           card.style.display = "flex";
        } else {
            card.style.display = "none";
        }
