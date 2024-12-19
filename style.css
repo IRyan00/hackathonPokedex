@@ -51,19 +51,6 @@ form label {
     padding: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .pokemon-card {
     background-color: transparent;
     width: 300px;
@@ -107,8 +94,8 @@ form label {
   }
   
   .pokemon-card-back {
-    background-color: #2980b9;
-    color: white;
+    background-color: white;
+    color: black;
     transform: rotateY(180deg);
     border-radius: 20px;
   }

@@ -39,7 +39,9 @@ const fetchPokemons = async () => {
       <p class="pokemon-number">№ ${pokemon.id}</p>
     </div>
     <div class="pokemon-card-back">
-    <h5 class="pokemon-name">${pokemon.name}</h5> 
+    <img src="${pokemon.sprite}" alt="${pokemon.name}" style="width:200px;height:200px;">
+    <p class="pokemon-weight">№ ${pokemon.weight}</p>
+    <p class="pokemon-height">№ ${pokemon.height}</p>
     </div>
   </div>
 </div>`;
