@@ -39,7 +39,7 @@ const fetchPokemons = async () => {
         </div>
       </div>`;
   });
-}; 
+}; // Fin de la fonction fetchPokemons
 
 // Appeler la fonction fetchPokemons
 fetchPokemons();
@@ -62,4 +62,4 @@ pokemonRecherchee.addEventListener('input', (event) => {
            card.style.display = "none";
        }
    });
-});
+});``

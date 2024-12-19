@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 50, 50);
+}
+
+/*----------TITRE----------*/
+
+h1 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/*----------BARRE DE RECHERCHE----------*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+form label {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-container {
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+/*----------POKEMONS----------*/
+
+#pokemons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 25%;
+    height: 15%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.pokemon-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    width: 40%;
+    height: auto;
+}
+
+.pokemon-name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.pokemon-number {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px;
+}
